@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width; initial-scale=0; maximum-scale=1.0; user-scalable=0;" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" type="text/css" href="css/colors.css" />
+        <script type="text/javascript" src="cordova-2.4.0.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+        <script type="text/javascript" src="js/openfb.js"></script>
+        <script type="text/javascript" src="js/colors.js"></script>
+        <title>Colors</title>
+    </head>
+    <body>
+        <div class="panel" id="panelLogin" data-role="page">
+            <h1>C<span class="color1">o</span><span class="color2">l</span><span class="color3">o</span><span class="color4">r</span>s</h1>  
+            <div id="btnLoginCont">
+                <div id="btnLogin">
+                    <a onclick="colors.facebookLogin()">
+                        <img src="img/btnLogin.png" />
+                    </a>    
+                </div>
+                <div id="btnStart">  
+                    <a href="#game" data-transition="flip">
+                        <img src="img/btnGame.png" />
+                    </a>    
+                </div>
+                 <div id="btnIns">  
+                    <a href="#panelInstrucciones" data-transition="flip">
+                        <img src="img/btnIns.png" />
+                    </a>    
+                </div>
+                <div id="btnLogout">  
+                    <a onclick="colors.facebookLogout()">
+                        <img src="img/btnLogout.png" />
+                    </a>    
+                </div>
+            </div>
+            <div class="panel">
+                <div class="textocopy"> 
+                    <div class="textoCreador">@orugal</div>
+                </div>
+            </div>
+        </div> 
+        <!--div que va a conmtener el Juego-->
+        <div class="panel" id="game" data-role="page">
+            <div id="cabeza">
+                <div id="logo">
+                     <h2>C<span class="color1">o</span><span class="color2">l</span><span class="color3">o</span><span class="color4">r</span>s</h2>
+                </div>
+                <div id="dataUser">
+                    <div id="nameUser"></div>
+                    <div id="fotoUser"></div>
+                </div>
+            </div>
+            <div id="puntajeTiempo">
+                <div id="puntaje">0<span class="miniText">PTS</span></div> 
+                <div id="tiempo">60<span class="miniText">SEG</span></div> 
+            </div>
+            <div id="pattern">
+                &nbsp;
+            </div>
+            <div id="conBotones">
+                <div class="botonesGame blueButton nogame" id="btn1" data-val="1"><img src="img/btn1.png" /> </div>
+                <div class="botonesGame redButton nogame" id="btn2" data-val="2"><img src="img/btn2.png" /></div>
+                <div class="botonesGame yellowButton nogame" id="btn3" data-val="3"><img src="img/btn3.png" /></div>
+                <div class="botonesGame greenButton nogame" id="btn4" data-val="4"><img src="img/btn4.png" /></div>
+            </div>
+        </div>
+        <!-- Ventana de instrucciones-->
+        <div class="panel" id="panelInstrucciones" data-role="page">
+            <h1>C<span class="color1">o</span><span class="color2">l</span><span class="color3">o</span><span class="color4">r</span>s</h1>  
+            <div id="instrucciones">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div> 
+    </body>
+</html>
